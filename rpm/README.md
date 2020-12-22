@@ -1,6 +1,8 @@
-# fpm-docker-minimal
+# fpm-docker-minimal, rpm builder image
 
-Simple repository to manage Dockerfile and any related configurations for a minimal `fpm` docker image
+A very minimal RPM builder container baseline example.
+
+This example indented to be extended to create per-package creation images.
 
 ## Building and running
 
@@ -9,7 +11,7 @@ docker build -t fpm-rpm .
 docker run -it fpm-rpm /bin/sh
 ```
 
-## Testing an RPM build
+## Manual test of RPM build
 ```
 cd ~
 mkdir ~/build/tmp/test

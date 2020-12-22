@@ -12,7 +12,7 @@ RUN apk update \
   ruby-dev \
   && apk upgrade
 
-RUN echo 'source "https://rubygems.org"; gem "fpm"' > Gemfile
+RUN echo 'source "https://rubygems.org"; gem "fpm", "~> 1.11.0"' > Gemfile
 RUN bundle install
 
 # final image only uses pre-compiled fpm binaries and RPM deps
